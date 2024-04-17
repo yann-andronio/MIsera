@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+body{
+   background: #f0f2f5;
+   font-family:  Helvetica, sans-serif, Arial;
+}
+
+
+.Inscription{
+    margin: 6.5rem 0 0 0;
+    display: flex;
+    /* text-align: center; */
+    /* justify-content: center; */
+}
+.textkely  h3{
+    font-size: clamp(1.75rem,2vw , .5rem);
+    letter-spacing: normal;
+    text-align: start;
+}
+
+.textkely span{
+    text-shadow: 0px -1px 3px #323f4e;
+    color: #000000;
+}
+.gauche{
+    padding: 2rem 0 0 0;
+    flex: 1;
+ 
+}
+.droite{
+    padding: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(0, 0, 0, 0.1) 0px 8px 16px 0px;
+    flex: 1;
+    background: #ffff;
+    border-radius: 8px;
+}
+.sary{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sary img{
+    animation: miflote 2s ease-in-out infinite;
+}
+
+.manana a{
+
+ text-decoration: none;
+}
+
+.btninscrit{
+    border: none;
+    background-color: #525e70;
+    transition: 0.7s;
+}
+.btninscrit:hover{
+    transition: 0.7s;
+    border: none;
+    background-color:#0e6a95e0;
+}
+
+
+/* .btninscrit{
+   font-size: 18px ;
+   letter-spacing: normal;
+   text-align: center;
+   box-shadow: none;
+   border-radius: 6px;
+} */
+
+
+
+@keyframes miflote {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+/*##########RESPONSIVE DESIGN ###############*/
+
+@media screen and (max-width: 768px) {
+ .Inscription{
+    flex-direction: column;
+    margin: auto;
+ }
+}
+
+
+/* pour tablette  1518-768 */
+
+@media screen and (max-width: 1089px) and (min-width: 768px) {
+    .Inscription{
+        flex-direction: column;
+        margin: auto;
+     }
+
+}
